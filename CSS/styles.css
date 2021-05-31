@@ -1,0 +1,155 @@
+/* Resets */
+:root {
+  /* Font Families */
+  --ff-overpass: 'Overpass', sans-serif;
+  --ff-ubuntu: 'Ubuntu', sans-serif;
+  /* Font Sizes */
+  --fs-16px: 16px;
+  --fs-h1: 3rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.5rem;
+  --fs-p: 1rem;
+  /* Font Weights */
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  /* Font Colors */
+  --fc-lightredcta: hsl(356, 100%, 66%);
+  --fc-verylightredcta: hsl(355, 100%, 74%);
+  --fc-redgradient: linear-gradient(to right, var(--fc-verylightred), var(--fc-lightred));
+  --fc-verydarkblue: hsl(208, 49%, 24%);
+  --fc-whitetext: hsl(0, 0%, 100%);
+  --fc-whitehover: hsl(0, 2%, 90%);
+  --fc-grayishblue: hsl(240, 2%, 79%);
+  --fc-verydarkgreyishblue: hsl(207, 13%, 34%);
+  --fc-verydarkblackblue: hsl(240, 10%, 16%);
+  --fc-verylightred: hsl(13, 100%, 72%);
+  --fc-lightred: hsl(353, 100%, 62%);
+  --fc-verydarkgrayblue: hsl(237, 17%, 21%);
+  --fc-verydarkdesaturatedblue: hsl(237, 23%, 32%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select{
+  font: inherit;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--fc-whitetext);
+  font-family: var(--ff-overpass);
+  font-size: var(--fs-16px);
+}
+
+nav {
+    padding: 2rem 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+p {
+  font-size: var(--fs-p);
+}
+
+.header {
+  background: url("../images/bg-pattern-intro.svg") center,
+   var(--fc-redgradient);
+  color: var(--fc-whitetext);
+  border-bottom-left-radius: 100px;
+}
+
+.header-content {
+  padding: 10rem 0;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  border-radius: 30px;
+  border: 1px var(--fc-whitetext) solid;
+  padding: 5px 15px;
+  margin: 50px 5px 0px;
+  color: var(--fc-lightredcta);
+}
+
+.filled{
+  background-color: var(--fc-whitetext);
+  color: var(--fc-lightred);
+}
+
+.filled:hover{
+  color: var(--fc-whitetext);
+  background-color: inherit;
+}
+
+.outline {
+  background-color: inherit;
+  color: var(--fc-whitetext);
+}
+
+.outline:hover {
+  background-color: var(--fc-whitetext);
+  color: var(--fc-lightredcta);
+}
+
+.filled:active, .outline:active{
+  background-color: var(--fc-verylightredcta);
+  color: var(--fc-whitetext);
+}
+
+section.features1,.features2,.features3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+}
+
+
+
+.features1 h2 {
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  body {
+    text-align: center;
+  }
+}
